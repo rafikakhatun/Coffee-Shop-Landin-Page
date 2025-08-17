@@ -21,7 +21,21 @@ function Hero() {
         </ul>
       </nav>
 
-      
+      {/* Hero Content */}
+      <div className="relative z-10 flex flex-col justify-center items-start h-full px-10 text-white">
+        <h1 className="text-3xl md:text-5xl font-bold max-w-xl leading-snug">
+          Keep your dreams aroused with a cup of coffee.
+        </h1>
+        <p className="mt-4 max-w-lg text-gray-200">
+          The coffee ideas shared by these generators are not cool at all, as
+          they are not a human being.
+        </p>
+        <button className="mt-6 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white font-medium">
+          Buy Now
+        </button>
+      </div>
+
+
     </section>
   );
 }
