@@ -1,3 +1,4 @@
+import { AlignJustify } from "lucide-react";
 import heroBg from "../assets/herobg.jpeg";
 
 function Hero() {
@@ -12,13 +13,14 @@ function Hero() {
       {/* Navbar */}
       <nav className="relative z-10 flex justify-between items-center px-10 py-6 text-white">
         <h1 className="text-2xl md:text-3xl font-mono font-bold text-red-600">Coffee</h1>
-        <ul className="flex gap-6 font-medium">
+        <ul className="hidden md:flex gap-6 font-medium">
           <li className="hover:text-red-400 cursor-pointer">Home</li>
           <li className="hover:text-red-400 cursor-pointer">About Us</li>
           <li className="hover:text-red-400 cursor-pointer">Menu</li>
           <li className="hover:text-red-400 cursor-pointer">Review</li>
           <li className="hover:text-red-400 cursor-pointer">Contact</li>
         </ul>
+        <span className="flex md:hidden" ><AlignJustify className="w-8 h-8 hover:text-red-500" /></span>
       </nav>
 
       {/* Hero Content */}
