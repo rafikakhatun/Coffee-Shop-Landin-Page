@@ -1,8 +1,20 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BestOfferCard from './BestOfferCard';
 
 const BestOffer = () => {
+
+    const fatchJson = async () => {
+        const response = await fetch("/Bestoffer.json");
+        const result = await response.json()
+        console.log(result)
+    }
+
+    useEffect(() => {
+        fatchJson()
+    }, [])
+
+    const [cofeeData, setCofeeData] = useState()
     return (
         <div>
             <section className='py-20 px-12 bg-white'>
@@ -21,7 +33,8 @@ const BestOffer = () => {
                     </div>
                     {/* best offer card */}
                     <div>
-                      <BestOfferCard></BestOfferCard>
+                        { }
+                        <BestOfferCard></BestOfferCard>
                     </div>
 
 
