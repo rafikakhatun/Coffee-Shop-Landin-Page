@@ -3,18 +3,19 @@ import React, { useEffect, useState } from 'react';
 import BestOfferCard from './BestOfferCard';
 
 const BestOffer = () => {
+    const [cofeeData, setCofeeData] = useState([])
 
     const fatchJson = async () => {
         const response = await fetch("/Bestoffer.json");
         const result = await response.json()
-        console.log(result)
+        setCofeeData(result)
     }
 
     useEffect(() => {
         fatchJson()
     }, [])
 
-    const [cofeeData, setCofeeData] = useState()
+
     return (
         <div>
             <section className='py-20 px-12 bg-white'>
@@ -33,8 +34,11 @@ const BestOffer = () => {
                     </div>
                     {/* best offer card */}
                     <div>
-                        { }
-                        <BestOfferCard></BestOfferCard>
+                        {cofeeData.map((datas,index)=>(
+                            <BestOfferCard key={index} profData={datas}></BestOfferCard>
+
+                        )) }
+                        
                     </div>
 
 

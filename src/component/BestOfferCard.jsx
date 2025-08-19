@@ -1,6 +1,7 @@
 import React from 'react';
 
-const BestOfferCard = () => {
+const BestOfferCard = ({profData}) => {
+    console.log(profData)
     return (
         <div>
 
