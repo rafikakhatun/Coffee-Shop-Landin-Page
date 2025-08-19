@@ -5,7 +5,7 @@ import BestOfferCard from './BestOfferCard';
 const BestOffer = () => {
     return (
         <div>
-            <section className='py-20 px-12 bg-gray-100'>
+            <section className='py-20 px-12 bg-white'>
                 {/*our best offer heading */}
                 <div>
                     <div className='flex flex-col md:flex-row justify-between p-8 space-y-6'>

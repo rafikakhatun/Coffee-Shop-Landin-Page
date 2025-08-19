@@ -21,7 +21,6 @@ function Hero() {
           <h1 className="text-2xl md:text-3xl font-mono font-bold text-red-600">Coffee</h1>
           
         </div>
-
         {/*desktop menu */}
         <ul className="hidden md:flex gap-6 font-medium">
           <li className="hover:text-red-400 cursor-pointer">Home</li>
