@@ -1,10 +1,16 @@
 
 import './App.css'
 import BestOffer from './component/BestOffer'
-import Hero from './component/Hero'
-import Navbar from './component/Hero'
+import Hero from './component/Hero';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // duration = animation speed
+  }, []);
 
   return (
     <>

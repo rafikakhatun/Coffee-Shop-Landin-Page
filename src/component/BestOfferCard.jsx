@@ -5,7 +5,7 @@ const BestOfferCard = ({profData}) => {
     return (
         <div>
 
-            <div className='w-72 p-6 bg-white shadow-lg rounded-lg P-8  space-y-4'>
+            <div className='w-72 p-6 bg-white P-8  shadow space-y-4'>
                 <img className='w-60 h-56' src="src/assets/cofee6.jpeg" alt="photo" />
 
                 <span className='font-semibold text-green-600'>$5.99</span>
@@ -24,7 +24,7 @@ const BestOfferCard = ({profData}) => {
                         </div>
                     </div>
 
-                    <button className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded">
+                    <button className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded cursor-pointer">
                         Get Delivery
                     </button>
                 </div>

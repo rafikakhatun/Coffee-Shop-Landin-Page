@@ -1,10 +1,15 @@
 import { AlignJustify, Coffee, X } from "lucide-react";
 import heroBg from "../assets/herobg.jpeg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Hero() {
+  const [isOpen, setIsOpen] = useState(true);
 
-  const [isOpen, setIsOpen] = useState(true)
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // once:true => ekbar animate hobe
+  }, []);
 
   return (
     <section
@@ -15,29 +20,43 @@ function Hero() {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Navbar */}
-      <nav className="relative z-10 flex justify-between items-center px-10 py-6 text-white">
-        <div className="flex">
-          <Coffee size={30} className="text-red-600"/>
-          <h1 className="text-2xl md:text-3xl font-mono font-bold text-red-600">Coffee</h1>
-          
+      <nav
+        className="relative z-10 flex justify-between items-center px-10 py-6 text-white"
+        data-aos="fade-down"
+      >
+        <div className="flex" data-aos="fade-right">
+          <Coffee size={30} className="text-red-600" />
+          <h1 className="text-2xl md:text-3xl font-mono font-bold text-red-600">
+            Coffee
+          </h1>
         </div>
         {/*desktop menu */}
-        <ul className="hidden md:flex gap-6 font-medium">
+        <ul className="hidden md:flex gap-6 font-medium" data-aos="fade-left">
           <li className="hover:text-red-400 cursor-pointer">Home</li>
           <li className="hover:text-red-400 cursor-pointer">About Us</li>
           <li className="hover:text-red-400 cursor-pointer">Menu</li>
           <li className="hover:text-red-400 cursor-pointer">Review</li>
           <li className="hover:text-red-400 cursor-pointer">Contact</li>
         </ul>
-        <button onClick={() => setIsOpen(!isOpen)} className="flex md:hidden" >
-          {isOpen ? (<X className="w-8 h-8 hover:text-red-500" />) : (<AlignJustify className="w-8 h-8 hover:text-red-500" />
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex md:hidden"
+          data-aos="zoom-in"
+        >
+          {isOpen ? (
+            <X className="w-8 h-8 hover:text-red-500" />
+          ) : (
+            <AlignJustify className="w-8 h-8 hover:text-red-500" />
           )}
-
         </button>
       </nav>
+
       {/*mobile menu */}
       {isOpen && (
-        <ul className="flex flex-col items-center justify-center md:hidden gap-6 absolute font-medium text-white w-full h-screen bg-black/70 z-20">
+        <ul
+          className="flex flex-col items-center justify-center md:hidden gap-6 absolute font-medium text-white w-full h-screen bg-black/70 z-20"
+          data-aos="fade-up"
+        >
           <li className="hover:text-red-400 cursor-pointer">Home</li>
           <li className="hover:text-red-400 cursor-pointer">About Us</li>
           <li className="hover:text-red-400 cursor-pointer">Menu</li>
@@ -46,10 +65,11 @@ function Hero() {
         </ul>
       )}
 
-
-
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col justify-center items-start h-full px-10 text-white">
+      <div
+        className="relative z-10 flex flex-col justify-center items-start h-full px-10 text-white"
+        data-aos="fade-up"
+      >
         <h1 className="text-3xl md:text-5xl font-bold max-w-xl leading-snug">
           Keep your dreams aroused with a cup of coffee.
         </h1>
@@ -57,12 +77,13 @@ function Hero() {
           The coffee ideas shared by these generators are not cool at all, as
           they are not a human being.
         </p>
-        <button className="mt-6 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white font-medium">
+        <button
+          className="mt-6 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white font-medium"
+          data-aos="zoom-in"
+        >
           Buy Now
         </button>
       </div>
-
-
     </section>
   );
 }

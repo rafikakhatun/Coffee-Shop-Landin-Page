@@ -33,7 +33,7 @@ const BestOffer = () => {
                         </div>
                     </div>
                     {/* best offer card */}
-                    <div>
+                    <div className='w-full grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center px-8 py-10 '>
                         {cofeeData.map((datas,index)=>(
                             <BestOfferCard key={index} profData={datas}></BestOfferCard>
 
