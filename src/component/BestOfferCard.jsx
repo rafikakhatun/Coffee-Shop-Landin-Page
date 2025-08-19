@@ -8,7 +8,7 @@ const BestOfferCard = ({ profData }) => {
             data-aos-delay="200"
             data-aos-duration="1000"
         >
-            <div 
+            <div
                 className='w-72 p-6 bg-white shadow space-y-4 rounded-xl'
                 data-aos="zoom-in"
                 data-aos-delay="250"
@@ -16,7 +16,7 @@ const BestOfferCard = ({ profData }) => {
             >
                 <img
                     className='w-60 h-56 mx-auto'
-                    src="src/assets/cofee6.jpeg"
+                    src={profData?.image}
                     alt="photo"
                     data-aos="fade-down"
                     data-aos-delay="300"
@@ -27,7 +27,7 @@ const BestOfferCard = ({ profData }) => {
                     data-aos="fade-right"
                     data-aos-delay="350"
                 >
-                    $5.99
+                    ${profData?.price}
                 </span>
 
                 <h1
@@ -35,7 +35,7 @@ const BestOfferCard = ({ profData }) => {
                     data-aos="fade-left"
                     data-aos-delay="400"
                 >
-                    Brazilian coffee beans
+                    {profData?.title}
                 </h1>
 
                 <p
@@ -43,36 +43,36 @@ const BestOfferCard = ({ profData }) => {
                     data-aos="fade-up"
                     data-aos-delay="450"
                 >
-                    Coffee that’s always you handle your own the way you like.
+                    {profData?.description}
                 </p>
 
-                <div 
+                <div
                     className="flex items-center gap-4"
                     data-aos="zoom-in-up"
                     data-aos-delay="500"
                 >
                     <div className="flex border border-gray-800 rounded">
-                        <div 
+                        <div
                             className="px-4 py-0 border-r border-gray-800"
                             data-aos="fade-up"
                             data-aos-delay="550"
                         >
-                            3
+                            {profData?.quantity}
                         </div>
                         <div className="flex flex-col">
-                            <button 
+                            <button
                                 className="px-3 py-0 border-b border-gray-400"
                                 data-aos="fade-down"
                                 data-aos-delay="600"
                             >
-                                +
+                                {profData?.increment}
                             </button>
-                            <button 
+                            <button
                                 className="px-3 py-0"
                                 data-aos="fade-up"
                                 data-aos-delay="650"
                             >
-                                -
+                                {profData?.decrement}
                             </button>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ const BestOfferCard = ({ profData }) => {
                         data-aos="flip-right"
                         data-aos-delay="700"
                     >
-                        Get Delivery
+                        {profData?.button}
                     </button>
                 </div>
             </div>

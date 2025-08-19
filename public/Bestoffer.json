@@ -3,34 +3,33 @@
     "id": 1,
     "title": "Brazilian coffee beans",
     "price": 5.99,
-    "description": "Coffee that’s always you handle your own the way you like.",
+    "description": "Rich and smooth Brazilian beans with a hint of chocolate  flavor.",
     "image": "src/assets/cofee6.jpeg",
     "quantity": 3,
     "increment": "+",
     "decrement": "-",
-    "button":"Get Delivery"
+    "button": "Get Delivery"
   },
   {
     "id": 2,
     "title": "Vietnam coffee beans",
     "price": 4.99,
-    "description": "Coffee that’s always you handle your own the way you like.",
+    "description": "Bold and intense Vietnamese beans with a strong aroma.",
     "image": "src/assets/cofee8.jpeg",
     "quantity": 2,
     "increment": "+",
     "decrement": "-",
-    "button":"Get Delivery"
-
+    "button": "Get Delivery"
   },
   {
     "id": 3,
     "title": "Indonesian coffee beans",
     "price": 3.99,
-    "description": "Coffee that’s always you handle your own the way you like.",
+    "description": "Earthy and aromatic Indonesian beans.",
     "image": "src/assets/cofee5.jpeg",
     "quantity": 1,
     "increment": "+",
     "decrement": "-",
-    "button":"Get Delivery"
+    "button": "Get Delivery"
   }
 ]
