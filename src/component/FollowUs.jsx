@@ -29,7 +29,7 @@ const FollowUs = () => {
             </h3>
 
             <h1
-              className="text-center text-2xl md:text-3xl font-bold"
+              className="text-center text-2xl md:text-4xl font-bold"
               data-aos="zoom-in"
               data-aos-delay="400"
             >
