@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import OurGalary from './component/OurGalary';
+import FollowUs from './component/FollowUs';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
    <Hero></Hero>
    <BestOffer></BestOffer>
    <OurGalary></OurGalary>
+   <FollowUs></FollowUs>
       
     </>
   )

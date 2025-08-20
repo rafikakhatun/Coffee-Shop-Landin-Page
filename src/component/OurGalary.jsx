@@ -13,7 +13,7 @@ const OurGalary = () => {
   return (
     <>
       {/* Heading */}
-      <section className='py-12 px-10 w-full' data-aos="fade-up">
+      <section className='py-8 px-10 w-full' data-aos="fade-up">
         <div className='flex flex-col space-y-5' data-aos="fade-up" data-aos-delay="100">
           <h1 className='text-2xl md:text-3xl font-semibold text-center' data-aos="zoom-in">
             Our Galary
@@ -29,7 +29,7 @@ const OurGalary = () => {
       </section>
 
       {/* Image Grid */}
-      <section className="px-6 md:px-12 pb-12" data-aos="fade-up">
+      <section className="px-6 md:px-12 py-10 pb-12" data-aos="fade-up">
         <div
           className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto"
           data-aos="zoom-in-up"
@@ -69,6 +69,16 @@ const OurGalary = () => {
             </div>
           ))}
         </div>
+      </section>
+      {/*Load more */}
+      <section className='px-8 py-12 w-full'>
+        <div className='flex flex-col  space-y-4'>
+          <div className='w-1/2 border border-gray-700 mx-auto' data-aos="fade-right"></div>
+          <span className='text-center text-red-600' data-aos="fade-up">LOAD MORE</span>
+          <div className='w-1/2 border mx-auto border-gray-700'></div>
+        </div>
+        
+
       </section>
     </>
   );
