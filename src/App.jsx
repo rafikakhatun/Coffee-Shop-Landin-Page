@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import OurGalary from './component/OurGalary';
 import FollowUs from './component/FollowUs';
+import UpdateNews from './component/UpdateNews';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
    <BestOffer></BestOffer>
    <OurGalary></OurGalary>
    <FollowUs></FollowUs>
+   <UpdateNews></UpdateNews>
       
     </>
   )

@@ -8,7 +8,7 @@ function Hero() {
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // once:true => ekbar animate hobe
+    AOS.init({ duration: 1000, once: true }); 
   }, []);
 
   return (
