@@ -22,6 +22,7 @@ function App() {
    <OurGalary></OurGalary>
    <FollowUs></FollowUs>
    <UpdateNews></UpdateNews>
+   <Footer></Footer>
       
     </>
   )
