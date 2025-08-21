@@ -57,7 +57,7 @@ const Footer = () => {
         data-aos="zoom-in" 
         data-aos-delay="400"
       >
-        Copyright © 2025 Coffee. All rights reserved. Present by <span className="text-rose-600">MacCreative</span>.
+        Copyright © 2025 Coffee. All rights reserved. Present by <span className="text-rose-500">MacCreative</span>.
       </div>
     </footer>
   );
