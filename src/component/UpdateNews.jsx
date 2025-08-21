@@ -4,7 +4,7 @@ import UpdateNewsCard from './UpdateNewsCard';
 
 const UpdateNews = () => {
 // update news card usestate
-const [updateCofee, setupdateCofee] = useState({})
+const [updateCofee, setupdateCofee] = useState([])
 
 // coffedata.json fetch api
 
@@ -30,10 +30,14 @@ useEffect(()=>{
                     <p className='text-center text-gray-700 text-md md:text-xl'>A cup of brewed cofee represents a contribute of up to 1.8 grams of <br /> fiber of the recommended.</p>
                 </div>
                 {/* Cards */}
-                <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 place-items-center">
+                <section className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-2 p-10 place-items-center">
                     {/* Card  */}
-                    <UpdateNewsCard></UpdateNewsCard>
+                    {updateCofee.map((cofeeItem,index)=>(
+
+                         <UpdateNewsCard profCofeeItem={cofeeItem} key={index}></UpdateNewsCard>
                     
+                    ))}
+                   
                 </section>
 
             </section>

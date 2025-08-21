@@ -4,20 +4,20 @@
     "name": "Coffee beans",
     "title": "These advertising mottos are targeted to the 50% of coffee drinking consumers.",
     "image": "src/assets/cofee9.jpeg",
-    "link": "Learn More »"
+    "link": "Learn More"
   },
   {
     "id": 2,
     "name": "Coffee beans",
     "title": "These advertising mottos are targeted to the 50% of coffee drinking consumers.",
-    "image": "src/assets/cofee10.jpeg",
-    "link": "Learn More »"
+    "image": "src/assets/cofee11.jpeg",
+    "link": "Learn More"
   },
   {
     "id": 3,
     "name": "Coffee beans",
     "title": "These advertising mottos are targeted to the 50% of coffee drinking consumers.",
     "image": "src/assets/cofee10.jpeg",
-    "link": "Learn More »"
+    "link": "Learn More"
   }
 ]
