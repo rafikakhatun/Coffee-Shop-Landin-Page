@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import OurGalary from './component/OurGalary';
 import FollowUs from './component/FollowUs';
 import UpdateNews from './component/UpdateNews';
+import Footer from './component/Footer';
 
 function App() {
 
